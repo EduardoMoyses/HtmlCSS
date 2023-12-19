@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+/*font-style-font-weight-font-size-font-family*/
+h1{
+    font:italic bolder 3em serif
+}
+
+/*Medidas absolutas
+cm,mm,im(polegada),px,pt,pc
+
+Medidas relativas
+em(tamanho atual da fonte M),ex(altura x),rem,vw,vh ,%
+
+recomendado usar px ou em
+
+16px é o tamanho padrão
+16px=1em
+*/
