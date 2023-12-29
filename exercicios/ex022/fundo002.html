@@ -37,6 +37,8 @@
 
         header h1{
             font-family: "lobster",'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
         }
 
         nav{
@@ -45,15 +47,24 @@
             background-color: rgb(223, 116, 134);
         }
 
-        nav a{
+        a{
             color: rgb(37, 102, 37);
             font-weight: bold;
             margin: 5px;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: rgb(192, 27, 82);
         }
 
         main{
-            height: 700px;
-            width: 900px;
+            min-width: 300px;
+            max-width: 1000px;
             margin: auto;
             padding: 15px;
             background-color: white;
@@ -63,21 +74,50 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        
+        main p{
+            font-size: 1em;
+            margin: 15px 0px;
+            text-align: justify;
+            text-indent: 30px;
+            line-height: 2em;
+        }
+
+
         aside{
             background-color: rgb(245, 206, 213);
+            padding: 10px;
+            border-radius: 10px;
         }
 
         aside > h2{
             font-family: "Maria_lucia", Arial, Helvetica, sans-serif;
             font-weight: bolder;
+            background-color: pink;
+            padding: 5px;
+            color: white;
+            margin: -10px -10px 0px -10px;
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.274);
         }
+
+        aside ul{
+        list-style-position: inside;
+        columns: 2;
+    }
 
         footer{
             color: white;
+            background-color: rgb(26, 83, 29);
+            font-size: 1em;
+            margin: 10px 0px 0px 0px;
+            padding: 5px;
             text-align: center;
-            background-color: black;
-            margin: 10px 0px;
-            padding: 1px;
+        }
+
+        ul a{
+            color: rgb(35, 85, 35);
+            text-decoration: none;
         }
     </style>
 </head>
@@ -122,6 +162,8 @@
 
 
                     </aside>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis culpa tempore voluptatibus odio pariatur, aperiam quibusdam enim eveniet quos rerum itaque impedit iusto dolores quia cupiditate, eum, temporibus blanditiis.</p>
         </article>
         </p>
     </main>
