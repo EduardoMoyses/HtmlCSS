@@ -17,6 +17,12 @@ h1,h2,p {
     text-align: justify;
 }
 
+h1,h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.2em;
+}
+
 header, section.normal {
     padding: 20px;
 }
@@ -31,11 +37,13 @@ section.flex-content {
 article.text-media {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 article.media-text {
     display: flex;
     flex-flow: row wrap-reverse;
+    justify-content: space-between;
 }
 
 .text {
@@ -43,5 +51,17 @@ article.media-text {
 }
 
 .media {
-    flex: 1 0 260px;
+    flex: 1 0 400px;
+}
+
+.media > img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
 }
