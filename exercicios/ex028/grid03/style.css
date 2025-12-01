@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.caixa1,.caixa2,.caixa3 {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.caixa1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5; /* Pode usar os números negativos também neste caso pode tanto o 5 quanto o -1*/
+    background-color: lightblue;
+}
+
+.caixa2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: lightcoral;
+}
+
+.caixa3 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: lightgreen;
+}
